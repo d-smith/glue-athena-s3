@@ -10,12 +10,15 @@ aws cloudformation create-stack --stack-name g \
 --capabilities CAPABILITY_IAM
 ```
 
-## Upload file
+## Upload file for schema def
 
 ```console
 aws s3 cp 100-Sales-Records.csv s3://97068crawlertesttarget
 ```
 
-## Notes
+## Upload data file
 
-To build a glue role instead of using AWSGlueServiceRoleDefault - see [here](https://docs.aws.amazon.com/glue/latest/dg/getting-started-access.html)
+```console
+aws s3 cp sample.json s3://97068crawlertesttarget
+```
+
