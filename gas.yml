@@ -111,7 +111,7 @@ Resources:
     Properties:
       JsonClassifier:
         Name: JasonTheCLassifier
-        JsonPath: '/'
+        JsonPath: '$.Records[*]'
 
   MyS3Bucket:
     Type: AWS::S3::Bucket

@@ -4,9 +4,17 @@ Based on [this](https://aws.amazon.com/blogs/big-data/build-a-data-lake-foundati
 
 ## deploy
 
+```console
 aws cloudformation create-stack --stack-name g \
 --template-body file://gas.yml \
 --capabilities CAPABILITY_IAM
+```
+
+## Upload file
+
+```console
+aws s3 cp 100-Sales-Records.csv s3://97068crawlertesttarget
+```
 
 ## Notes
 
